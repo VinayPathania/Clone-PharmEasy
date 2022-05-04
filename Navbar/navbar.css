@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+#navbar{
+    width: 100%;
+    height: 123px;
+    /* position: fixed; */
+    border: 1px solid;
+    background-color: #10847e;
+   
+}
+
+#navbar>div:nth-child(1){
+    position: relative;
+    width: 80%;
+    height: 75px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 90px;
+    display: flex;
+    
+}
+
+#navbar>div>img{
+    width:14%;
+    height: 60px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    padding-top: 10px;
+
+}
+
+#searchBar{
+    width: 72%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid yellow; */
+    /* justify-content: space-evenly; */
+    font-size: 1rem;
+    background-color: white;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+#pincode{
+    border: 0px ;
+    font-size: 1.1rem;
+   color: #10847e;
+   border-radius: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+   
+}
+#searchBar>input{
+    width: 70%;
+    font-size: 1rem;
+    border: 0px;
+    margin-left: 30px;
+    
+}
+
+#searchBar>button{
+    width: 9%;
+    border-radius: 10px;
+    border: 0px;
+  
+}
+
+#row2
+{
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+    
+}
+
+ #row2>div:nth-child(1){
+     width: 33%;
+     display: flex;
+     justify-content: space-between;
+    margin-left: 140Px;
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 5px;
+    
+ }
+
+ #row2>div:nth-child(2){
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 5px;
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+   
+}
+div>p>a{
+    color: rgb(22, 22, 22);
+    font-style: normal;
+    font-size: 1rem;
+}
+a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+p:hover{
+    cursor: pointer;
+}
+
+
+
