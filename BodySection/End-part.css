@@ -93,7 +93,7 @@
       font-size: 1.5rem;
       color:rgb(48, 48, 48);
   }
-  button{
+  #v-btn{
       font-size: 2rem;
       font-weight: 700;
       color:rgb(255, 255, 255);
@@ -105,7 +105,7 @@
       border-radius: 10px;
       cursor: pointer;
   }
-  button:hover{
+  #v-btn:hover{
       
       background-color: rgb(255, 83, 83);
       
