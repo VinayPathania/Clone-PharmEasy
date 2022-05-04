@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+
+<body>
+
+   
+    <div id="main">
+        <form id="loginform2">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""/>
+            <h3>Login</h3>
+            <input id="EMAIL" type="text" placeholder="Enter email">
+            <input id="PSWRD" type="password" placeholder="Enter Password">
+            <input type="submit" value="Login" id="sub">
+            
+        </form>
+    </div>
+  
+</body>
+</html>
+<script>
+    var logindata=JSON.parse(localStorage.getItem("logindata"))
+    document.querySelector("#loginform2").addEventListener("submit",match)
+
+    function match(){
+        event.preventDefault();
+        var data2={
+          email:loginform2.EMAIL.value,
+          pass:loginform2.PSWRD.value
+        }
+        localStorage.setItem("localdata",JSON.stringify(data2))
+        var local=JSON.parse(localStorage.getItem("localdata"))
+
+        var match=logindata.find(a => a.peopleEmail==local.email && a.peoplePswrd==local.pass);
+
+        if(match != undefined || match !=null)
+        {
+            alert("succesfully login")
+        }
+        else
+        {
+            alert("user doesn't exist")
+        }
+    }
+    
+</script>

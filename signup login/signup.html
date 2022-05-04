@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="signup.css">
+   
+</head>
+<style>
+    
+</style>
+<body>
+   
+    <div id="main">
+        <form id="loginform">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""/>
+            <h3>Sign-up</h3>
+            <input id="email" type="text" placeholder="Enter email">
+            <input id="pswrd" type="password" placeholder="Enter Password">
+            <p>By signing up,I accept the Terms of service and acknowledge the Privacy Policy.</p>
+            <input type="submit" value="Sign-up" id="sub">
+            
+        </form>
+    </div>
+   
+</body>
+</html>
+<script>
+     document.querySelector("#loginform").addEventListener("submit",myFunction)
+
+     var logindata=JSON.parse(localStorage.getItem("logindata"))||[]
+
+     function myFunction(){
+       event.preventDefault();
+       var data={
+            peopleEmail:loginform.email.value,
+            peoplePswrd:loginform.pswrd.value,
+        }
+        logindata.push(data)
+        localStorage.setItem("logindata",JSON.stringify(logindata))
+        alert("Account created successfully!")
+        window.location.href="login.html"
+     }
+
+</script>
