@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&family=Oswald&display=swap" rel="stylesheet">
+
+   
+    <title>Document</title>
+</head>
+<body>
+      
+    <div class="slider">
+        <div class="images">
+          <input type="radio" name="slide" id="img1" checked />
+          <input type="radio" name="slide" id="img2" checked/>
+          <input type="radio" name="slide" id="img3" />
+          <input type="radio" name="slide" id="img4" />
+          <input type="radio" name="slide" id="img5" checked/>
+      
+             
+              <img
+              src="https://cms-contents.pharmeasy.in/banner/b9b34dbc96d-GETCSH_DWEB.jpg?dim=1440x0&dpr=1&q=100"
+              class="m1"
+              alt="img1"
+              />
+              <img
+              src="https://cms-contents.pharmeasy.in/banner/7400d70904b-DWEB.jpg?dim=1440x0&dpr=1&q=100"
+              class="m2"
+              alt="img2"
+              />
+              <img
+              src="https://cms-contents.pharmeasy.in/banner/67c90823870-psp_dweb_may.jpg?dim=1440x0&dpr=1&q=100"
+              class="m3"
+              alt="img3"
+              />
+              <img
+              src="https://cms-contents.pharmeasy.in/banner/85955054ec0-Surgicare_Dweb_1.jpg?dim=1440x0&dpr=1&q=100"
+              class="m4"
+              alt="img4"
+              />
+              <img
+              src="https://cms-contents.pharmeasy.in/banner/f94b6f47e03-MED25_Dweb.jpg?dim=1440x0&dpr=1&q=100"
+              class="m5"
+              alt="img5"
+              /> 
+  
+        </div>
+        <!------radio dots starting  -----> 
+        <div class="dots">
+          <label for="img1"></label>
+          <label for="img2"></label>
+          <label for="img3"></label>
+          <label for="img4"></label>
+          <label for="img5"></label>
+        </div>
+      </div>
+  
+
+    <div class="row2LK">
+           <div >
+                <div class="orderLK">
+                    <div class="stripLK" >FLAT <span>15%</span>18% OFF</div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/7c645a8d.png?dim=186x0&dpr=1.100000023841858&q=100" alt="">
+                    <h3> Order Medicine</h3> 
+                    <a href=""><button>Order Now</button></a>  
+                </div> 
+            </div>
+
+            <div >
+                <div class="orderLK" style="  background: linear-gradient(to bottom, #fcf2d2 60%, white 40%); ">
+                    <div class="stripLK" >UPTO 60% OFF</div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/c7c7095b.png?dim=186x0&dpr=1.100000023841858&q=100" alt="">
+                    <h3> Healthcare Products</h3> 
+                    <a href=""><button style="background-color: #FC8019;">Order Now</button></a>  
+                </div> 
+            </div>
+
+            <div >
+                <div class="orderLK" style="background-color: #d6f0fe;">
+                    <div class="stripLK" >UPTO 70% OFF</div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/e1d3ac1c.png?dim=186x0&dpr=1.100000023841858&q=100" alt="">
+                    <h3> Lab Tests <br>
+                         <button id="NewLK">New</button>
+                    </h3> 
+                    <a  href=""><button id="card3LK" >Order Now</button></a>  
+                </div> 
+            </div>
+          
+</div>
+                   
+              <div class="row3Lkstrip">
+                            <!-- <img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png" alt=""> -->
+                        <div class="str1" ><img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png" alt=""></div>
+                        <div id="saveLK">Save Flat 5% extra on medicine & enjoy FREE delivery with PLUS membership</div>
+                        <!-- <div></div> -->
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png" alt="">
+              </div>
+</body>
+</html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
