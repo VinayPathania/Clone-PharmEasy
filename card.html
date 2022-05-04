@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        #container{
+        display: grid;
+        width: 90%;
+       
+        margin: auto;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+
+    }
+    #container>div{
+       width: 400px;
+       border: 1px solid gray;
+       border-radius: 5px;
+    }
+    #container img{
+       width:100%;
+       height: 300px;
+    } 
+    p,h3{
+        display: flex;
+        justify-content: center;
+        justify-items: center;;
+    }
+   
+   
+    
+    button{
+        display: block;
+        margin: auto;
+        padding: 5px 10px;
+        background-color: teal;
+        color: white;
+        font-weight: bold;
+        border: 0px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    #box1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #pr,#ct{
+        display: flex;
+    }
+    /* #count{
+        display: flex;
+        /* //justify-content: left; */
+    
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h2>Cart</h1>
+          <div id="ct">
+        <h2>Item in Cart:</h2>
+        <h2 id="count"></h1>
+        </div>
+        <div id="pr">
+        <h2>Amount to be paid:</h2>
+        <h2 id="price"></h1>
+        </div>
+        
+    </div>
+    <div id="container"></div>
+    
+    
+</body>
+</html>
+<script>
+var cardArr=JSON.parse(localStorage.getItem("productcard"))||[];
+var count=JSON.parse(localStorage.getItem("countervalue"))||0;
+var price1=JSON.parse(localStorage.getItem("priceCard"))||0
+console.log(price1);
+document.querySelector("#price").innerText=price1
+document.querySelector("#count").innerText=count;
+
+console.log(cardArr)
+displayData(cardArr);
+function displayData(data){
+    console.log(data)
+    data.forEach(function(ele,index){
+        var box=document.createElement("div");
+        var cardimage=document.createElement("img");
+       cardimage.setAttribute("src",ele.image_url)
+        var productname=document.createElement("h3");
+        productname.innerText=ele.name;
+        var productprice=document.createElement("p");
+        productprice.innerText=ele.price;
+        var deletebutton=document.createElement("button");
+        deletebutton.innerText="DELETE";
+        //deletebutton.setAttribute("id",del)
+        deletebutton.addEventListener("click",function(){
+            deleteFuction(ele,index,ele.price)
+        })
+        box.append(cardimage,productname,productprice,deletebutton);
+        document.querySelector("#container").append(box);
+    })
+    //localStorage.setItem("addcards",JSON.stringify(cardArr));
+   
+  function deleteFuction(ele,index,p){
+    //event.target.parentNode.remove();
+    console.log("I am deteted")
+    cardArr.splice(index,1)
+    count--;
+    var price=price1-p;
+    localStorage.setItem("priceCard",JSON.stringify(price))
+    localStorage.setItem("productcard",JSON.stringify(cardArr));
+    localStorage.setItem("countervalue",JSON.stringify(count))
+    window.location.reload();
+    //window.localStorage.reload();
+  }
+}
+</script>
