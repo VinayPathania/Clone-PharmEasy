@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+    <!--...............................- navbar starts..................................... -->
+    <div id="navbar">
+        <div id="row1">
+            <!-- Logo -->
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" >
+
+            <!-- PinCode and Search Bar -->
+            <div id="searchBar">
+
+                <select name="pincode" id="pincode">
+                    <option value="">Select Pincode</option>
+                    <option value="440013">Mumbai</option>
+                    <option value="445682">Bangalore</option>
+                    <option value="489789">Delhi</option>
+                </select>
+                <input type="text" placeholder="Search medicines/Healthcare products @18% Off">
+                
+               <button><a href=""><i class="fa-light fa-magnifying-glass"></i></a></button> 
+            </div>
+        </div>
+
+        <!-- login singup navbar -->
+        <div id="row2">
+            <div>
+                <a href="">Order Medicines</a>
+                <a href="">Healthcare Products</a>
+                <a href="">Lab Tests</a>
+                <a href="">RTPCR</a>
+            </div>
+            <div>
+                <p>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" >
+                   <p>Offers</p></p>
+                <p>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" >
+                <p> Login /Singup</p></p>
+                <p>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" >
+                <p> Cart</p>
+                 </p>
+
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- --------------------------------------------navbar end...................................... -->
+     
+    <div id="main">
+        <form id="loginform2">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""/>
+            <h3>Login</h3>
+            <input id="EMAIL" type="text" placeholder="Enter email">
+            <input id="PSWRD" type="password" placeholder="Enter Password">
+            <input type="submit" value="Login" id="sub">
+            
+        </form>
+    </div>
+  
+</body>
+</html>
+<script>
+    var logindata=JSON.parse(localStorage.getItem("logindata"))
+    document.querySelector("#loginform2").addEventListener("submit",match)
+
+    function match(){
+        event.preventDefault();
+        var data2={
+          email:loginform2.EMAIL.value,
+          pass:loginform2.PSWRD.value
+        }
+        localStorage.setItem("localdata",JSON.stringify(data2))
+        var local=JSON.parse(localStorage.getItem("localdata"))
+
+        var match=logindata.find(a => a.peopleEmail==local.email && a.peoplePswrd==local.pass);
+
+        if(match != undefined || match !=null)
+        {
+            alert("succesfully login")
+        }
+        else
+        {
+            alert("user doesn't exist")
+        }
+    }
+    
+</script>
