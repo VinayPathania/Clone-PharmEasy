@@ -1,0 +1,47 @@
+
+/* css part of Add to cart page is here */
+
+#parent{
+    width: 80%;
+    border: 1px solid;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+}
+
+.box{
+    width: 40%;
+    border: 1px solid;
+    margin: auto;
+}
+
+/* all items appending here */
+#addedItems{
+    width: 100%;
+    border: 1px solid red;
+    
+}
+#addedItems>div{
+    /* div in which img and info will rest */
+    display: flex;
+    margin: auto;
+    border: 1px solid teal;
+}
+
+.imgdiv{
+    width: 10%;
+
+}
+
+.imgdiv>img{
+    width: 100%;
+}
+
+.infobox{
+    width: 80%;
+
+}
+
+
+
+

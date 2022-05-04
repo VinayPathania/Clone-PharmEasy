@@ -124,6 +124,8 @@ function handlePrice(){
     itemdec.innerText=ele.strikedoffprice;
 
     var button=document.createElement("button");
+    // class added to remove color from search bar in nav
+    button.setAttribute("class","btn")
     button.innerText="Add to Cart";
     
     button.addEventListener("click",function(){
