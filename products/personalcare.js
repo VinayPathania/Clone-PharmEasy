@@ -118,7 +118,7 @@ function handlePrice(){
     itename.innerText=ele.name;
 
     var itemprice=document.createElement("p");
-    itemprice.innerText=ele.price;
+    itemprice.innerText="MRP-"+" "+ele.price;
 
     var itemdec=document.createElement("p");
     itemdec.innerText=ele.strikedoffprice;
