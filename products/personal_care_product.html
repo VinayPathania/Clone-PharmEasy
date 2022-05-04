@@ -11,63 +11,69 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./../Navbar/navbar.css">
     <link rel="stylesheet" href="personal_care.css">
+    <link rel="stylesheet" href="../Navbar/navbar.css">
+    
     
   </head>
   <body>
-    <div id="navbar">
-      <div id="row1">
-          <!-- Logo -->
-          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" >
+   <!-- Navbar added here -->
+   <div id="navbar">
+    <div id="row1">
+        <!-- Logo -->
+        <img class="logo" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" >
 
-          <!-- PinCode and Search Bar -->
-          <div id="searchBar">
+        <!-- PinCode and Search Bar -->
+        <div id="searchBar">
 
-              <select name="pincode" id="pincode">
-                  <option value="">Select Pincode</option>
-                  <option value="440013">Mumbai</option>
-                  <option value="445682">Bangalore</option>
-                  <option value="489789">Delhi</option>
-              </select>
-              <input type="text" placeholder="Search medicines/Healthcare products @18% Off">
-              
-             <button><a href=""><i class="fa-light fa-magnifying-glass"></i></a></button> 
-          </div>
-      </div>
+            <select name="pincode" id="pincode">
+                <option value="">Select Pincode</option>
+                <option value="440013">Mumbai</option>
+                <option value="445682">Bangalore</option>
+                <option value="489789">Delhi</option>
+            </select>
+            <input type="text" placeholder="Search medicines/Healthcare products @18% Off">
+            
+           <button class="searchbtn">Search</button> 
+        </div>
+    </div>
 
-      <!-- login singup navbar -->
-      <div id="row2">
-          <div>
-              <a href="">Order Medicines</a>
-              <a href="">Healthcare Products</a>
-              <a href="">Lab Tests</a>
-              <a href="">RTPCR</a>
-          </div>
-          <div>
-              <p>
-                  <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" >
-                 <p>Offers</p></p>
-              <p>
-                  <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" >
-              <p> Login /Singup</p></p>
-              <p>
-                  <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" >
-              <p> <a href="card.html">Cart</a></p>
-               </p>
+    <!-- login singup navbar -->
+    <div id="row2">
+        <div>
+            <a href="">Order Medicines</a>
+            <!-- healthcare product linked -->
+            <a href="../products/helthcare_product.html">Healthcare Products</a>
+            <a href="">Lab Tests</a>
+            <a href="">RTPCR</a>
+        </div>
+        <div>
+            <p>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" >
+               <a>Offers</a></p>
+            <p>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" >
+            <a> Login /Singup</a></p>
+            <p>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" >
+            <a href="../products/card.html"> Cart</a>
+             </p>
 
-          </div>
+        </div>
 
-          
-      </div>
-  </div>
+        
+    </div>
+</div>
+
+
+    <!-- Personal care products here -->
     <div id="mainDiv">
       <div id="left-content">
         <h1>Filter</h1>
       </div>
       <div id="right-content">
         <div id="p-sort">
-          <h1>Personal Care</h1>
+          <h1 class="prsnl">Personal Care</h1>
           <div>
             <p>Sort By:</p>
           <select id="SortByPrice" onChange="handlePrice()">
@@ -83,4 +89,10 @@
     </div>
   </body>
 </html>
+<script>
+   //reload on clicking added
+   document.querySelector(".logo").addEventListener("click",function(){
+        window.location.href="../products/Navbar/navbar.html";
+    })
+</script>
 <script src="personalcare.js"></script>

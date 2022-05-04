@@ -67,7 +67,8 @@
        font-size: 1.5rem;
     }
 
-    button {
+    /* class added tag name removed */
+    .btn {
       display: block;
       margin: auto;
       padding: 5px 10px;
@@ -81,13 +82,15 @@
       display: flex;
       justify-content: space-evenly;
     }
-    a {
+
+    /* no need of anchor tag  */
+    /* a {
       text-decoration: none;
       font-size: 30px;
-    }
+    } */
 
-    h1,
-    p {
+   /* h1 removed (class prsnl add) and p tag removed for priortizing white color  */
+   .prsnl{
       color: rgb(44, 44, 44);
     }
     #SortByPrice {
