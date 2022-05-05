@@ -115,6 +115,7 @@ function handlePrice(){
     imgitem.setAttribute("src",ele.image_url)
   
     var itename=document.createElement("h3");
+    itename.setAttribute("class","prodhead")
     itename.innerText=ele.name;
 
     var itemprice=document.createElement("p");
