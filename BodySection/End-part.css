@@ -57,10 +57,9 @@
       align-items: left;
       justify-content: center;
       flex-direction: column;
-    border-radius: 8px;
-      
-      
+      border-radius: 8px;    
   }
+
   #offer-sec>div>div>img{
       height: 10.5rem;
       margin:10px auto;
