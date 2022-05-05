@@ -246,3 +246,13 @@ margin: 0rem 0rem 0rem 2rem;
     bottom: -.35rem;
     right: 35px;
 }
+/* @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+  
+    @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    } */
