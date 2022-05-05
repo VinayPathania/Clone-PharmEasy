@@ -44,12 +44,14 @@
       
     }
     #left-content{
-      width: 24%;
+      width: 20%;
     }
     #right-content{
       width: 60%;
     }
     #mainDiv{
+      width: 100%;
+      margin: auto;
       margin-top: 30px;
       margin-bottom: 40px;
       display: flex;
@@ -83,15 +85,12 @@
       justify-content: space-evenly;
     }
 
-    /* no need of anchor tag  */
-    /* a {
-      text-decoration: none;
-      font-size: 30px;
-    } */
+   
 
    /* h1 removed (class prsnl add) and p tag removed for priortizing white color  */
    .prsnl{
       color: rgb(44, 44, 44);
+      font-size: 2.5rem;
     }
     #SortByPrice {
       margin: 0px 10px;
