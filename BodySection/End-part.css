@@ -12,7 +12,7 @@
 #offer-head{
     display: flex;
     align-items: baseline;
-    background-color: rgb(255, 225, 230);
+    background-color: #fcf7e4;
     padding-bottom: 170px;
     padding-top: 20px;
 }
@@ -66,11 +66,11 @@
       padding-top: 20px;
   }
   #offer-sec>div>div>h2{
-      background-color: rgb(255, 83, 83);
+      background-color: #f7797a;
       padding: 5px 10px;
       margin: -2px;
       margin-right:7.5rem;
-      border: 2px solid rgb(255, 83, 83);
+      border: 2px solid #f7797a;
       border-top-left-radius: 8px;
       font-size: 1.3rem;  
       color: #fff;
@@ -100,13 +100,13 @@
       display: block;
       margin: -60px auto;
       border: none;
-      background-color: rgb(255, 68, 68);
+      background-color: #f76060;
       border-radius: 10px;
       cursor: pointer;
   }
   #v-btn:hover{
       
-      background-color: rgb(255, 83, 83);
+      background-color: #f7797a;
       
   }
 
