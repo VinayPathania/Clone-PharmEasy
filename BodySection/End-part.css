@@ -46,7 +46,7 @@
     background-color: #fff;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     /* border-color:rgb(254, 88, 42) ; */
     /* line-height: 25px; */
   }
@@ -58,6 +58,9 @@
       justify-content: center;
       flex-direction: column;
       border-radius: 8px;    
+  }
+  #offer-sec>div>div:hover{
+    border: 2px solid #f76060;
   }
 
   #offer-sec>div>div>img{
@@ -102,6 +105,8 @@
       background-color: #f76060;
       border-radius: 10px;
       cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: bold;
   }
   #v-btn:hover{
       
