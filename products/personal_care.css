@@ -58,7 +58,7 @@
       justify-content: space-around;
     }
 
-    p,h3 {
+    p,.prodhead {
       text-align: center;
       line-height: 25px;
     }
