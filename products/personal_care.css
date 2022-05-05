@@ -31,14 +31,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1.5px solid rgb(197, 197, 197);
+      border: 1.8px solid rgb(197, 197, 197);
       border-radius: 5px;
       box-sizing: border-box;
       padding: 10px;
       object-fit: contain;
     }
     #container > div:hover {
-      border: 2px solid teal;
+      border: 1.8px solid teal;
     }
     #container img {
       height: 80px;
