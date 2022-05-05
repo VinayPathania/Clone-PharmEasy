@@ -8,7 +8,8 @@
     
     <!-- Navbar CSS linked to cart page -->
     <link rel="stylesheet" href="../Navbar/navbar.css">
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../products/cart.css">
     <style>
         /* #container{
         display: grid;
@@ -115,22 +116,134 @@
     <div id="parent">
         <div class="box">
           <!-- Added Cart Items -->
-                <h2 id="count"></h1>
-                <h2>Item in Cart</h2>
+                <h1 class=""> <span  id="count"></span> Item in Cart</h1>
                 <div id="addedItems">
                     <!-- items will be append here -->
+                    
+                   
                 </div>
         </div>
 
         <div class="box">
                 <!-- coupon, delivery address and order summary -->
+                <h2>Amount to be paid: ₹ <span  id="price"></span></h2>
+               
         </div>
     </div>
    
-        <!-- <div id="pr">
-            <h2>Amount to be paid:</h2>
-            <h2 id="price"></h1>
-        </div> -->
+
+     <!-- whole Footer starts from here -->
+
+    <!-- App Download Section -->
+    <div id="appdownload">
+        <div>Simplifying Healthcare,Impacting Lives</div>
+        <div>
+            <h2>Download the App for free</h2>
+            <div class="playstore">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/4e4f1cab.png" alt="">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt="">
+
+            </div>
+        </div>
+       
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="contacts">
+            <!--All Contact Details Column wise-->
+            <div>
+                <!-- First Column -->
+               
+                    <!-- Company -->
+                    <h3>Company</h3>
+                    <a class="hello" href="">About Us</a>
+                    <a class="hello" href="">Careers</a>
+                    <a class="hello" href="">Blog</a>
+                    <a class="hello" href="">Partner with PharmEasy</a>
+                    <a class="hello" href="">Sell at PharmEasy</a>
+                
+                    <!-- Our Service -->
+                    <h3>Our Service</h3>
+                    <a class="hello" href="">Order Medicine</a>
+                    <a class="hello" href="">Healthcare Products</a>
+                    <a class="hello" href="">Lab Tests</a>
+                    <a class="hello" href="">Find Nearest Collection Centre</a>
+                
+            </div>
+            <div>
+                <!-- Second Column -->
+
+                    <!-- Featured Categories -->
+                    <h3>Featured Categories</h3>
+                    <a class="hello" href="">Personal Care</a>
+                    <a class="hello" href="">Health Food and Drinks</a>
+                    <a class="hello" href="">Skin Care</a>
+                    <a class="hello" href="">Home Care</a>
+                    <a class="hello" href="">Ayurvedic Care</a>
+                    <a class="hello" href="">Sexual Wellness</a>
+                    <a class="hello" href="">Fitness & Supplements</a>
+                    <a class="hello" href="">Mother and Baby Care</a>
+                    <a class="hello" href="">Healthcare Devices</a>
+                    <a class="hello" href="">Surgicals and Dressings</a>
+                    <a class="hello" href="">Covid Essentials</a>
+                    <a class="hello" href="">Health Condition</a>
+                    <a class="hello" href="">Diabetic Care</a>
+                    <a class="hello" href="">Elderly Care</a>
+                    <a class="hello" href="">Accessories And Wearables</a>
+                    <a class="hello" href="">Pet Care</a>
+            </div>
+            <div>
+                <!-- Third Column -->
+
+                    <!-- Need Help -->
+                    <h3>Need Help</h3>
+                    <a class="hello" href="">Browse All Medicines</a>
+                    <a class="hello" href="">Browse All Molecules</a>
+                    <a class="hello" href="">Browse All Cities & Areas</a>
+                    <a class="hello" href="">FAQs</a>
+
+                    <!-- Policy Info -->
+                    <h3>Policy Info</h3>
+                    <a class="hello" href="">Editorial Policy</a>
+                    <a class="hello" href="">Privacy Policy</a>
+                    <a class="hello" href="">Vulnerability Disclosure Policy</a>
+                    <a class="hello" href="">Terms and Conditions</a>
+                    <a class="hello" href="">Customer Support Policy</a>
+                    <a class="hello" href="">Return Policy</a>
+
+            </div>
+            <div>
+                <!-- Fourth Column -->
+                <h3>FOLLOW US</h3>
+                <div class="images">
+                    <img class="socialmediaimg" src="../Footer/Social Media icons/instagram.png" alt="">
+                    <img class="socialmediaimg" src="../Footer/Social Media icons/facebook.png" alt="">
+                    <img class="socialmediaimg" src="../Footer/Social Media icons/youtube.png" alt="">
+                    <img class="socialmediaimg" src="../Footer/Social Media icons/twitter.png" alt="">
+    
+                </div>
+            </div>
+        </div>
+        <div id="paypart">
+            <!--Our Payment Partners-->
+            <h3>Our Payment Partners</h3>
+            <div class="partenrimg">
+                <img class="paymentimg" src="../Footer/Payment Partner Icons/Gpay.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/paytm.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/amazonpay.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/phonepe.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/mobikwik.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/airtelPay.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/OlaMoney.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/maestro.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/mastercard.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/visa.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/rupay.svg" alt="">
+                <img  class="paymentimg" src="../Footer/Payment Partner Icons/Dinner club international.svg" alt="">
+            </div>
+            <span> &copy; 2022 PharmEasy. All Rights Reserved</span>
+        </div>
+    </div>
     
     
     
@@ -140,7 +253,7 @@
 var cardArr=JSON.parse(localStorage.getItem("productcard"))||[];
 var count=JSON.parse(localStorage.getItem("countervalue"))||0;
 var price1=JSON.parse(localStorage.getItem("priceCard"))||0
-console.log(price1);
+// console.log(price1);
 document.querySelector("#price").innerText=price1
 document.querySelector("#count").innerText=count;
 
@@ -150,17 +263,18 @@ function displayData(data){
     console.log(data)
     data.forEach(function(ele,index){
         var box=document.createElement("div");
+        box.setAttribute("class","childdiv")
 
         var imgbox=document.createElement("div")
         imgbox.setAttribute("class","imgdiv")
 
         var cardimage=document.createElement("img");
-       cardimage.setAttribute("src",ele.image_url)
+         cardimage.src=ele.image_url
 
-       imgbox.append(cardimage)
+        imgbox.append(cardimage)
 
-       var infobox=document.createElement("div")
-       infobox.setAttribute("class","infodiv")
+        var infobox=document.createElement("div")
+        infobox.setAttribute("class","infodiv")
 
         var productname=document.createElement("h3");
         productname.innerText=ele.name;
@@ -170,7 +284,7 @@ function displayData(data){
 
         var deletebutton=document.createElement("button");
         deletebutton.innerText="DELETE";
-        //deletebutton.setAttribute("id",del)
+        deletebutton.setAttribute("class","dltbtn")
         deletebutton.addEventListener("click",function(){
             deleteFuction(ele,index,ele.price)
         })

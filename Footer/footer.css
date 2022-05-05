@@ -10,7 +10,7 @@
     height: 300px;
     background-color:#f4f7fb ;
     padding-left: 50px;
-    
+    margin-top: 20px;
 }
 #appdownload>div:nth-child(1)
 {
@@ -26,6 +26,8 @@
 
 
 .playstore{
+    /* top margin added to h2 in appdownload id */
+    margin-top: 20px;
     width: 28%;
     display: flex;
     justify-content: space-between;
@@ -83,6 +85,10 @@
     /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
+}
+
+.images{
+    width: 100%;
 }
 .socialmediaimg{
     width:18%;
