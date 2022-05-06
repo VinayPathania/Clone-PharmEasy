@@ -243,7 +243,7 @@ margin: 0rem 0rem 0rem 2rem;
   
   height: 115px;
   position: absolute;
-  bottom: -.35rem;
+  /* bottom: -.35rem; */
   right: 35px;
 }
 /* @media screen and (max-width: 992px) {
