@@ -2,7 +2,7 @@
     font-family: sans-serif;
     
 }
-form{
+.formm{
    height:auto;
    border: 1px solid #10847e;
    margin: auto;
@@ -15,7 +15,7 @@ form{
   
   
 }
-input{
+.inputt{
    display: block;
    text-align: center;
    margin-top: 20px;
@@ -27,17 +27,17 @@ input{
     border-radius: 8px;
     border: 0px;
 }
-p{
+#terms{
    margin: auto;
    text-align: center;
    font-size: 12px;
 }
-img{
+#imgg{
     width: 60%;
     margin-left: 70px;
    
 }
-h3{
+#signup{
     text-align: center;
     font-size: 30px;
     color: white;
@@ -54,7 +54,7 @@ h3{
     background-color:#189f99;
     border: 1px solid black;
 }
-#main{
+#mainnn{
     /* margin: auto; */
     display: flex;
     justify-content: center;
