@@ -3,7 +3,7 @@
 
 #parent{
     width: 80%;
-    /* border: 1px solid; */
+    border: 1px solid red;
     margin: auto;
     margin-top: 40px;
     display: flex;
@@ -67,6 +67,7 @@
     height:400px;
     width: 49%;
     border: 0px solid red;
+    position: fixed;
         
     /* //it make distaance b/w footer and content ? */
 }
@@ -117,7 +118,9 @@ padding-bottom: -5px;
     color: #4f585e;font-size: 14px;
 }
 .calculationLK >span{
-    float: right;font-size: 14px;
+    /* float: right; */
+    /* margin-right: 20px; */
+    font-size: 14px;
 }
 .calculationLK>del{
   margin-left: 100px;font-size: 14px;
@@ -144,7 +147,7 @@ padding-bottom: -5px;
 .safetyzone{
     height:60px; align-items: center;
     width:100%;background-color: #e9f9ff;
-    border: 0spx solid red;display: flex;
+    border: 0px solid red;display: flex;
     border-radius: 6px;
 }
 .safetyzone >div{
