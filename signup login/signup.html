@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGNUP</title>
     <link rel="stylesheet" href="signup.css">
+
     <link rel="stylesheet" href="../Navbar/navbar.css">
+
+
    
 </head>
 <style>
@@ -68,6 +71,7 @@
             <input id="pswrd" type="password" placeholder="Enter Password">
             <p>By signing up,I accept the Terms of service and acknowledge the Privacy Policy.</p>
             <input type="submit" value="Sign-up" id="sub">
+
             
         </form>
     </div>
@@ -87,8 +91,24 @@
         }
         logindata.push(data)
         localStorage.setItem("logindata",JSON.stringify(logindata))
-        alert("Account created successfully!")
-        window.location.href="login.html"
-     }
+        // alert("Account created successfully!")
+        //  var pswrdd=false
+        logindata.forEach(function(ele){
+            if(ele.peopleEmail=="" && ele.peoplePswrd=="")
+            {
+                
+                window.location.href="signup.html"
+              }
+            else{
+            
+                window.location.href="login.html"
+                //   alert("Account created successfully!")
+            }
 
+        })
+       
+        
+
+     }
+     
 </script>
