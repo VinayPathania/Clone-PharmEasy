@@ -14,7 +14,7 @@
     /* border: 1px solid; */
     margin: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: ;
+    /* background-color: ; */
 }
 
 /* all items appending here */
@@ -65,5 +65,19 @@
     border-radius: 10px;
 }
 
+.qtyhand{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    
+}
 
-
+#disoffer{
+    text-decoration: line-through;
+    color: gray;
+}
+.disc{
+    color: gray;
+}

@@ -127,7 +127,13 @@
         <div class="box">
                 <!-- coupon, delivery address and order summary -->
                 <h2>Amount to be paid: ₹ <span  id="price"></span></h2>
-               
+                <h2 class="disc">Discount : ₹ <span id="disoffer"></span> </h2>
+                <h2>Final Amount After Discount : ₹<Span id="finalamt"></Span> </h2>
+            
+               <form id="form">
+                   <input type="text" id="discount" placeholder="Discount">
+                   <input type="submit">
+               </form>
         </div>
     </div>
    
@@ -250,6 +256,7 @@
 </body>
 </html>
 <script>
+
 var cardArr=JSON.parse(localStorage.getItem("productcard"))||[];
 var count=JSON.parse(localStorage.getItem("countervalue"))||0;
 var price1=JSON.parse(localStorage.getItem("priceCard"))||0
@@ -257,10 +264,20 @@ var price1=JSON.parse(localStorage.getItem("priceCard"))||0
 document.querySelector("#price").innerText=price1
 document.querySelector("#count").innerText=count;
 
-console.log(cardArr)
+document.querySelector("form").addEventListener("submit",myFunction)
+
+var finalprice=localStorage.getItem("finalamount") || 0
+
+document.querySelector("#finalamt").innerText=finalprice
+
+var discountcutoff =localStorage.getItem("discountoffered") || 0
+
+document.querySelector("#disoffer").innerText=discountcutoff
+
+// console.log(cardArr)
 displayData(cardArr);
 function displayData(data){
-    console.log(data)
+    // console.log(data)
     data.forEach(function(ele,index){
         var box=document.createElement("div");
         box.setAttribute("class","childdiv")
@@ -280,7 +297,24 @@ function displayData(data){
         productname.innerText=ele.name;
 
         var productprice=document.createElement("p");
-        productprice.innerText=ele.price;
+        productprice.innerText="MRP-"+ele.price;
+
+
+        // var qtyhandling =document.createElement("div")
+        // qtyhandling.setAttribute("class","qtyhand")
+
+        // var increase=document.createElement("button")
+        // increase.innerText="+"
+        // increase.setAttribute("id","incr")
+     
+
+        // var counter=document.createElement("h1")
+        // counter.setAttribute("class","counter")
+
+        // var decrease=document.createElement("button")
+        // decrease.innerText="-"
+        // decrease.setAttribute("id","decr")
+        // decrease.addEventListener("click",functDecr)
 
         var deletebutton=document.createElement("button");
         deletebutton.innerText="DELETE";
@@ -288,6 +322,8 @@ function displayData(data){
         deletebutton.addEventListener("click",function(){
             deleteFuction(ele,index,ele.price)
         })
+
+        // qtyhandling.append(increase,counter,decrease,deletebutton)
 
         infobox.append(productname,productprice,deletebutton)
 
@@ -299,15 +335,67 @@ function displayData(data){
    
   function deleteFuction(ele,index,p){
     //event.target.parentNode.remove();
-    console.log("I am deteted")
+    // console.log("I am deteted")
     cardArr.splice(index,1)
     count--;
-    var price=price1-p;
+    var price=(price1-p);
     localStorage.setItem("priceCard",JSON.stringify(price))
     localStorage.setItem("productcard",JSON.stringify(cardArr));
     localStorage.setItem("countervalue",JSON.stringify(count))
     window.location.reload();
     //window.localStorage.reload();
   }
+
+// var count1 = localStorage.getItem("counter") || 0
+//     document.querySelector(".counter").innerText = count1;
+
+//  document.querySelector("#incr")
+
+//  function functIncre(){
+//     count1++;
+//     document.querySelector(".counter").innerText = count1
+//     localStorage.setItem("counter",count1)
+
+//  }
+
+
+//  document.querySelector("#decr")
+
+//  function functDecr(){
+//      count1--
+
+//      document.querySelector(".counter").innerText = count1
+
+//      localStorage.setItem("counter",count1)
+
+//  }
+
+
+
 }
+//  var p =JSON.parse(localStorage.getItem())
+function myFunction(){
+     event.preventDefault();
+    
+     var discount=form.discount.value
+
+     discount=discount/100;
+
+     var random=discount*price1;
+
+    var total_amount=price1-random;
+
+    // console.log(total_amount)
+    // console.log(random)
+    localStorage.setItem("discountoffered",random)
+    localStorage.setItem("finalamount",total_amount)
+    
+    var finalprice=localStorage.getItem("finalamount") || 0
+
+    var discountcutoff =localStorage.getItem("discountoffered") || 0
+
+    window.location.reload()
+ }
+
+
 </script>
