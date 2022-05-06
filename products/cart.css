@@ -36,19 +36,25 @@
 
 .imgdiv{
     width: 10%;
+    /* height: auto; */
     /* border: 1px solid; */
     margin: 10px 0px;
+
 }
 
 .imgdiv>img{
-    width: 100%;
-    
+    max-height: 60px;
+    max-width: 60px;
+    margin: 0 auto;
+    vertical-align: middle;
 }
 
 .infodiv{
     width: 80%;
     text-align: center;
     margin:10px 0px;
+    padding-left: 15px;
+
 }
 
 .dltbtn{

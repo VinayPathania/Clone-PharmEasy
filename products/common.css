@@ -21,7 +21,8 @@
 
 }
 #box1:hover{
-    box-shadow: teal 0px 3px 6px, teal 0px 3px 6px,
+    box-shadow:teal 0px 0px 8px;
+
    
 }
 #box1>div{
