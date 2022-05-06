@@ -7,7 +7,7 @@
     #container {
       display: grid;
       width: 100%;
-      grid-template-columns: repeat(3, 250px);
+      grid-template-columns: repeat(3, 200px);
       grid-template-rows: repeat(4, auto);
       gap: 20px;
       margin-bottom: 30px;
@@ -17,7 +17,7 @@
       margin-bottom: 20px;
       align-items: center;
       width: 100%;
-      justify-content: space-around;
+      justify-content: space-between;
       
     }
     #p-sort>div{
@@ -31,32 +31,36 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1.5px solid rgb(166, 166, 166);
+      border: 1.8px solid rgb(197, 197, 197);
       border-radius: 5px;
       box-sizing: border-box;
       padding: 10px;
+      object-fit: contain;
     }
     #container > div:hover {
-      border: 1.5px solid teal;
+      border: 1.8px solid teal;
     }
     #container img {
-      height: 100px;
+      height: 80px;
       
     }
     #left-content{
-      width: 24%;
+      width: 20%;
+      text-align: left;
     }
     #right-content{
       width: 60%;
     }
     #mainDiv{
+      width: 80%;
+      margin: auto;
       margin-top: 30px;
       margin-bottom: 40px;
       display: flex;
       justify-content: space-around;
     }
 
-    p,h3 {
+    p,.prodhead {
       text-align: center;
       line-height: 25px;
     }
@@ -64,10 +68,13 @@
        font-size: 2.5rem;
     }
     #p-sort>div>p{
-       font-size: 1.5rem;
+       font-size: 1.2rem;
+       font-weight: bold;
+       color: rgb(44, 44, 44);
     }
 
-    button {
+    /* class added tag name removed */
+    .btn {
       display: block;
       margin: auto;
       padding: 5px 10px;
@@ -76,28 +83,65 @@
       font-weight: bold;
       border-radius: 8px;
       border: 0px;
+      cursor: pointer;
     }
     #box2 {
       display: flex;
       justify-content: space-evenly;
     }
-    a {
-      text-decoration: none;
-      font-size: 30px;
-    }
 
-    h1,
-    p {
+   
+
+   /* h1 removed (class prsnl add) and p tag removed for priortizing white color  */
+   .prsnl{
       color: rgb(44, 44, 44);
+      font-size: 2.5rem;
     }
     #SortByPrice {
       margin: 0px 10px;
       padding: 10px;
       margin-bottom: 10px;
-      width: 300px;
+      width: 200px;
       height: 40px;
       border-radius: 10px;
     }
     #container>div>div{
       margin: 20px;
+    }
+
+
+
+    /* Filter Section */
+    .hr{
+      margin: 30px auto;
+      color: teal;
+      border: 1px solid teal;
+    }
+
+    .filter-head{
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: rgb(62, 62, 62);
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .form-data{
+      margin: 15px auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .brand-s{
+      border-radius: 8px;
+      border: none;
+      border: 2px solid grey;
+      padding: 5px;
+    }
+    .left-btn{
+      margin-top: 30px;
+      color: teal;
+      font-weight: 700;
+    }
+    .form-data{
+      color: rgb(94, 94, 94);
     }

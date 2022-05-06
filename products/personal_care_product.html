@@ -11,63 +11,158 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./../Navbar/navbar.css">
     <link rel="stylesheet" href="personal_care.css">
+    <link rel="stylesheet" href="../Navbar/navbar.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    
     
   </head>
   <body>
-    <div id="navbar">
-      <div id="row1">
-          <!-- Logo -->
-          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" >
+   <!-- Navbar added here -->
+   <div id="navbar">
+    <div id="row1">
+        <!-- Logo -->
+        <img class="logo" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" >
 
-          <!-- PinCode and Search Bar -->
-          <div id="searchBar">
+        <!-- PinCode and Search Bar -->
+        <div id="searchBar">
 
-              <select name="pincode" id="pincode">
-                  <option value="">Select Pincode</option>
-                  <option value="440013">Mumbai</option>
-                  <option value="445682">Bangalore</option>
-                  <option value="489789">Delhi</option>
-              </select>
-              <input type="text" placeholder="Search medicines/Healthcare products @18% Off">
-              
-             <button><a href=""><i class="fa-light fa-magnifying-glass"></i></a></button> 
-          </div>
-      </div>
+            <select name="pincode" id="pincode">
+                <option value="">Select Pincode</option>
+                <option value="440013">Mumbai</option>
+                <option value="445682">Bangalore</option>
+                <option value="489789">Delhi</option>
+            </select>
+            <input type="text" placeholder="Search medicines/Healthcare products @18% Off">
+            
+           <button class="searchbtn">Search</button> 
+        </div>
+    </div>
 
-      <!-- login singup navbar -->
-      <div id="row2">
-          <div>
-              <a href="">Order Medicines</a>
-              <a href="">Healthcare Products</a>
-              <a href="">Lab Tests</a>
-              <a href="">RTPCR</a>
-          </div>
-          <div>
-              <p>
-                  <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" >
-                 <p>Offers</p></p>
-              <p>
-                  <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" >
-              <p> Login /Singup</p></p>
-              <p>
-                  <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" >
-              <p> <a href="card.html">Cart</a></p>
-               </p>
+    <!-- login singup navbar -->
+    <div id="row2">
+        <div>
+            <a class="anchorcolor1" href="">Order Medicines</a>
+            <!-- healthcare product linked -->
+            <a class="anchorcolor1" href="../products/helthcare_product.html">Healthcare Products</a>
+            <a class="anchorcolor1" href="">Lab Tests</a>
+            <a class="anchorcolor1" href="">RTPCR</a>
+        </div>
+        <div>
+            <p>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" >
+               <a class="anchorcolor2">Offers</a></p>
+            <p>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" >
+            <a class="anchorcolor2"> Login /Signup</a></p>
+            <p>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" >
+            <a class="anchorcolor2" href="../products/card.html"> Cart</a>
+             </p>
 
-          </div>
+        </div>
 
-          
-      </div>
-  </div>
+        
+    </div>
+</div>
+
+
+
+
+    <!-- Personal care products here -->
     <div id="mainDiv">
+
+        <!-- LEFT CONTENT -->
       <div id="left-content">
-        <h1>Filter</h1>
+        <h1 class="prsnl">Filter</h1>
+        <p class="filter-head">Catagory</p>
+        <form class="cat-form">
+          <div class="form-data">
+            <label>Personal care</label>
+            <input type="radio" >
+          </div>
+        </form>
+        <hr class="hr">
+        <p class="filter-head">Sub-Catagory</p>
+        <form class="cat-form">
+            <div class="form-data">
+                <label>Mens care</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>Appliances</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>Women care</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>Oral care</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>Male Grooming</label>
+                <input type="radio" >
+              </div>
+              <div class="left-btn">View More</div>
+        </form>
+        <hr class="hr">
+        <p class="filter-head">Brand</p>
+        <form class="cat-form">
+            <input type="text" placeholder="search" class="brand-s">
+            <div class="form-data">
+                <label>&me</label>
+                <input type="radio">
+              </div>
+              <div class="form-data">
+                <label>23 Yards</label>
+                <input type="radio">
+              </div>
+              <div class="form-data">
+                <label>360 block</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>Arshaveda</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>Abena</label>
+                <input type="radio" >
+              </div>
+              <div class="left-btn">View More</div>
+        </form>
+        <hr class="hr">
+        <p class="filter-head">Price</p>
+        <form class="cat-form">
+            <div class="form-data">
+                <label>Below 99</label>
+                <input type="radio">
+              </div>
+              <div class="form-data">
+                <label>100-199</label>
+                <input type="radio">
+              </div>
+              <div class="form-data">
+                <label>200-299</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>300-399</label>
+                <input type="radio" >
+              </div>
+              <div class="form-data">
+                <label>400-499</label>
+                <input type="radio" >
+              </div>
+        </form>
       </div>
+
+      <!-- RIGHT CONTENT -->
       <div id="right-content">
         <div id="p-sort">
-          <h1>Personal Care</h1>
+          <h1 class="prsnl">Personal Care</h1>
           <div>
             <p>Sort By:</p>
           <select id="SortByPrice" onChange="handlePrice()">
@@ -81,6 +176,132 @@
         <div id="container"></div>
       </div>
     </div>
+
+
+
+   
+
+     <!-- whole Footer starts from here -->
+
+    <!-- App Download Section -->
+    <div id="appdownload">
+      <div>Simplifying Healthcare,Impacting Lives</div>
+      <div>
+          <h2>Download the App for free</h2>
+          <div class="playstore">
+              <img src="https://assets.pharmeasy.in/web-assets/dist/4e4f1cab.png" alt="">
+              <img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt="">
+
+          </div>
+      </div>
+     
+  </div>
+  <!-- Footer -->
+  <div id="footer">
+      <div id="contacts">
+          <!--All Contact Details Column wise-->
+          <div>
+              <!-- First Column -->
+             
+                  <!-- Company -->
+                  <h3>Company</h3>
+                  <a class="hello" href="">About Us</a>
+                  <a class="hello" href="">Careers</a>
+                  <a class="hello" href="">Blog</a>
+                  <a class="hello" href="">Partner with PharmEasy</a>
+                  <a class="hello" href="">Sell at PharmEasy</a>
+              
+                  <!-- Our Service -->
+                  <h3>Our Service</h3>
+                  <a class="hello" href="">Order Medicine</a>
+                  <a class="hello" href="">Healthcare Products</a>
+                  <a class="hello" href="">Lab Tests</a>
+                  <a class="hello" href="">Find Nearest Collection Centre</a>
+              
+          </div>
+          <div>
+              <!-- Second Column -->
+
+                  <!-- Featured Categories -->
+                  <h3>Featured Categories</h3>
+                  <a class="hello" href="">Personal Care</a>
+                  <a class="hello" href="">Health Food and Drinks</a>
+                  <a class="hello" href="">Skin Care</a>
+                  <a class="hello" href="">Home Care</a>
+                  <a class="hello" href="">Ayurvedic Care</a>
+                  <a class="hello" href="">Sexual Wellness</a>
+                  <a class="hello" href="">Fitness & Supplements</a>
+                  <a class="hello" href="">Mother and Baby Care</a>
+                  <a class="hello" href="">Healthcare Devices</a>
+                  <a class="hello" href="">Surgicals and Dressings</a>
+                  <a class="hello" href="">Covid Essentials</a>
+                  <a class="hello" href="">Health Condition</a>
+                  <a class="hello" href="">Diabetic Care</a>
+                  <a class="hello" href="">Elderly Care</a>
+                  <a class="hello" href="">Accessories And Wearables</a>
+                  <a class="hello" href="">Pet Care</a>
+          </div>
+          <div>
+              <!-- Third Column -->
+
+                  <!-- Need Help -->
+                  <h3>Need Help</h3>
+                  <a class="hello" href="">Browse All Medicines</a>
+                  <a class="hello" href="">Browse All Molecules</a>
+                  <a class="hello" href="">Browse All Cities & Areas</a>
+                  <a class="hello" href="">FAQs</a>
+
+                  <!-- Policy Info -->
+                  <h3>Policy Info</h3>
+                  <a class="hello" href="">Editorial Policy</a>
+                  <a class="hello" href="">Privacy Policy</a>
+                  <a class="hello" href="">Vulnerability Disclosure Policy</a>
+                  <a class="hello" href="">Terms and Conditions</a>
+                  <a class="hello" href="">Customer Support Policy</a>
+                  <a class="hello" href="">Return Policy</a>
+
+          </div>
+          <div>
+              <!-- Fourth Column -->
+              <h3>FOLLOW US</h3>
+              <div class="images">
+                  <img class="socialmediaimg" src="../Footer/Social Media icons/instagram.png" alt="">
+                  <img class="socialmediaimg" src="../Footer/Social Media icons/facebook.png" alt="">
+                  <img class="socialmediaimg" src="../Footer/Social Media icons/youtube.png" alt="">
+                  <img class="socialmediaimg" src="../Footer/Social Media icons/twitter.png" alt="">
+  
+              </div>
+          </div>
+      </div>
+      <div id="paypart">
+          <!--Our Payment Partners-->
+          <h3>Our Payment Partners</h3>
+          <div class="partenrimg">
+              <img class="paymentimg" src="../Footer/Payment Partner Icons/Gpay.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/paytm.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/amazonpay.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/phonepe.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/mobikwik.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/airtelPay.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/OlaMoney.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/maestro.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/mastercard.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/visa.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/rupay.svg" alt="">
+              <img  class="paymentimg" src="../Footer/Payment Partner Icons/Dinner club international.svg" alt="">
+          </div>
+          <span> &copy; 2022 PharmEasy. All Rights Reserved</span>
+      </div>
+  </div>
+
+
+
   </body>
 </html>
+<script>
+   //reload on clicking added
+   document.querySelector(".logo").addEventListener("click",function(){
+        window.location.href="../products/Navbar/navbar.html";
+    })
+</script>
 <script src="personalcare.js"></script>

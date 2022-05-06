@@ -115,6 +115,7 @@ function handlePrice(){
     imgitem.setAttribute("src",ele.image_url)
   
     var itename=document.createElement("h3");
+    itename.setAttribute("class","prodhead")
     itename.innerText=ele.name;
 
     var itemprice=document.createElement("p");
@@ -124,6 +125,8 @@ function handlePrice(){
     itemdec.innerText=ele.strikedoffprice;
 
     var button=document.createElement("button");
+    // class added to remove color from search bar in nav
+    button.setAttribute("class","btn")
     button.innerText="Add to Cart";
     
     button.addEventListener("click",function(){

@@ -10,15 +10,62 @@
 </head>
 
 <body>
+    <div id="navbar">
+        <div id="row1">
+            <!-- Logo -->
+            <img class="logo" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" >
 
-   
-    <div id="mainn">
-        <form id="loginform2" class="Form">
-            <img class="photo" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""/>
-            <h3 id="loginn">Login</h3>
-            <input id="EMAIL" class="Inputtt" type="text" placeholder="Enter email">
-            <input id="PSWRD" class="Inputtt" type="password" placeholder="Enter Password">
-            <input type="submit" class="Inputtt" value="Login" id="sub">
+            <!-- PinCode and Search Bar -->
+            <div id="searchBar">
+
+                <select name="pincode" id="pincode">
+                    <option value="">Select Pincode</option>
+                    <option value="440013">Mumbai</option>
+                    <option value="445682">Bangalore</option>
+                    <option value="489789">Delhi</option>
+                </select>
+                <input type="text" placeholder="Search medicines/Healthcare products @18% Off">
+                
+               <button class="searchbtn">Search</button> 
+            </div>
+        </div>
+
+        <!-- login singup navbar -->
+        <div id="row2">
+            <div>
+                <a class="anchorcolor1" href="">Order Medicines</a>
+                <!-- healthcare product linked -->
+                <a class="anchorcolor1" href="../products/helthcare_product.html">Healthcare Products</a>
+                <a class="anchorcolor1" href="">Lab Tests</a>
+                <a class="anchorcolor1" href="">RTPCR</a>
+            </div>
+            <div>
+                <p>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" >
+                   <a class="anchorcolor2">Offers</a></p>
+                <p>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" >
+                <a class="anchorcolor2" href="../signup login/signup.html"> Login /Signup</a></p>
+                <p>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" >
+                <a class="anchorcolor2" href="../products/card.html"> Cart</a>
+                 </p>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+   <!-- login part -->
+    <div id="main">
+        <form id="loginform2">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""/>
+            <h3>Login</h3>
+            <input id="EMAIL" type="text" placeholder="Enter email">
+            <input id="PSWRD" type="password" placeholder="Enter Password">
+            <input type="submit" value="Login" id="sub">
+
             
         </form>
     </div>
@@ -43,10 +90,14 @@
         if(match != undefined || match !=null)
         {
             alert("succesfully login")
+            // changes-homepage linked after login successful
+            window.location.href="http://127.0.0.1:5500/Team-Spartans/Navbar/navbar.html"
         }
         else
         {
             alert("user doesn't exist")
+            //changes- returns to singup page if user doesn't exist 
+            window.location.href="http://127.0.0.1:5500/Team-Spartans/signup%20login/signup.html"
         }
     }
     
