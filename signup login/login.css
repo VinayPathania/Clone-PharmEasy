@@ -3,7 +3,7 @@
     
 }
 
-form{
+.Form{
 
     height:auto;
     border: 1px solid #10847e;
@@ -14,7 +14,7 @@ form{
     border-radius: 10px;
    
 }
-input{
+.Inputtt{
     display: block;
     text-align: center;
     margin-top: 20px;
@@ -26,13 +26,13 @@ input{
     border-radius: 8px;
     border: 0px;
 }
-h3{
+#loginn{
     text-align: center;
     font-size: 35px;
     color: white;
     font-family:'Times New Roman', Times, serif
 }
-img{
+.photo{
     width: 60%;
     margin-left: 70px;
    
@@ -47,7 +47,7 @@ img{
      width: 35%;
      padding: 10px 10px 10px 10px;
  }
- #main{
+ #mainn{
     /* margin: auto; */
     display: flex;
     /* justify-content: center;
