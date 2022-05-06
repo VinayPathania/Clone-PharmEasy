@@ -14,7 +14,7 @@
     /* border: 1px solid; */
     margin: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: ;
+    /* background-color:white ; */
 }
 
 /* all items appending here */
@@ -58,6 +58,106 @@
     padding: 5px 8px;
     border-radius: 10px;
 }
+/* >>>>>>>>>>>>>>cart calculation css>>>>>>>>>>>>> */
+#appdownload{
+    display: flex;
+}
+
+#sonOfappdownload{
+    height:400px;
+    width: 49%;
+    border: 0px solid red;
+        
+    /* //it make distaance b/w footer and content ? */
+}
+
+.btnOfLk{
+    height:45px;
+    width:350px;
+    font-weight: 700;display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex; background-color: white;
+    border-radius: 6px;border-color: #10847e;
+  
+}
+/* .btnOfLk:nth-child(1){
+    padding-bottom: 5px;
+    }
+    
+.btnOfLk>span:nth-child(2){
+padding-bottom: -5px;
+} */
 
 
+.buttn2{
+    height:45px;
+    width:350px;
+    border-radius: 6px;
+    background-color: #10847e;
+    color: #ffff;border: 0; font-size: 16px;
+}
+.buttn3lk{
+    height:45px;
+    width:350px;
+    border-style: dashed;
+    color: #10847e; border-width: .7px;
+    border-color: #10847e;
+    padding-bottom: 5px;background-color:#f2fff8;
+    border-radius: 6px;font-size: 14px;
+}
+.buttn3lk>img{
+    height: 20px;
+    width: auto;
+    padding-top: 5px;
+}
 
+.calculationLK{
+    margin: .5rem 0rem 0rem 0rem;
+    color: #4f585e;font-size: 14px;
+}
+.calculationLK >span{
+    float: right;font-size: 14px;
+}
+.calculationLK>del{
+  margin-left: 100px;font-size: 14px;
+}
+#discountSalectionsgv{
+    height:45px;
+    width:350px;
+    margin-top: 15px; font-size: 14px;
+    border-style: dashed;
+    color: #10847e; border-width: .7px;
+    border-color: #10847e;
+    padding-bottom: 5px;background-color:#f2fff8;
+    border-radius: 6px;
+    padding: 0px 20px 0px 5px;
+}
+#discountSalectionsgv>option{
+    font-size: 14px;
+}
+#getPlusPrem{
+    height:225px;
+    width:350px;
+    /* margin-top: 20px; */
+}
+.safetyzone{
+    height:60px; align-items: center;
+    width:100%;background-color: #e9f9ff;
+    border: 0spx solid red;display: flex;
+    border-radius: 6px;
+}
+.safetyzone >div{
+    height:100%;
+    width:30px;margin: 20px 0px 0px 10px;
+    border: 0px solid rgb(6, 136, 69);
+}
+.safetyzone >div+div{
+    height:100%;margin-top: 20px;
+    width:300px;font-size: 14px;
+    border: 0px solid rgb(121, 35, 242);
+}
+.safetyzone >img{
+    height:25px;
+    width:30px; margin-top: 20px;
+}

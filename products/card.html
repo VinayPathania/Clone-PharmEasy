@@ -7,6 +7,8 @@
     <title>Card</title>
     
     <!-- Navbar CSS linked to cart page -->
+    <!-- first link for icons not for fonts -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../Navbar/navbar.css">
     <link rel="stylesheet" href="../Footer/footer.css">
     <link rel="stylesheet" href="../products/cart.css">
@@ -126,7 +128,49 @@
 
         <div class="box">
                 <!-- coupon, delivery address and order summary -->
-                <h2>Amount to be paid: ₹ <span  id="price"></span></h2>
+                <!-- <h2>Amount to be paid: ₹ <span  id="price"></span></h2> -->
+            </div>
+            <div id="sonOfappdownload">
+                 <button class="btnOfLk" type="submit">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/90a09c2f.svg" alt="">&nbsp;&nbsp;
+                   <span>Apply Coupon/View Offers</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">
+                                navigate_next
+                                </span>
+                        
+             </button>
+                <br>
+                <button class="buttn2">Proceed To Buy</button>
+                <br><br>
+                <button class="buttn3lk"> <img src="https://cdn.pharmeasy.in/cms/delivery_image.png" alt=""> &nbsp; Free Delivery with Cart value above ₹500</button>
+            <br>  <br>  
+                   <h3 class="calculationLK">Order Summary</h3>
+                  
+                   <p class="calculationLK" >cart value &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>₹1500</del><span>₹XXX</span></p>
+                   <p class="calculationLK">Delivery Charge<del>₹799</del><span>₹XXX</span></p>
+                   <h4 class="calculationLK">Amount to be Paid <span  id="price"></span></h4>
+                   <!-- salect tag for discount selection here -->
+                 
+                   <select name="savings" id="discountSalectionsgv">
+                       <img src="C:\Users\Admin\Desktop\Project1\Team-Spartans\moneyBhai.jpeg" alt="">
+                       <option id="mrp" value="">₹ <img src=""/> <span> Total savings of ₹142.5 on this order</span></option>
+                       <option id="mrp"  value="">₹ MRP Discount 25%   <span>₹112</span></option>
+                       <option id="mrp" value="">₹ deliver Charges waiver <span>30</span></option>
+                       <!-- <h2>Amount to be paid: ₹ </h2> -->
+                    </select>
+                    <br> <br>
+                    <!-- broken image here -->
+                   <img id="getPlusPrem" src="C:\Users\Admin\Desktop\Project1\Team-Spartans\sspremium.png" alt="">
+                 <br><br>
+                   <div class="safetyzone">
+                      <div id="sfezonImg"> <img src="https://assets.pharmeasy.in/web-assets/dist/0c22e009.svg?dim=0x32&dpr=1.100000023841858&q=100" alt=""></div>
+                       <div>Products will be safely packed & Sanitized. Pay online for contactless delivery</div>    
+                    </div>
+
+            </div>
+
+
+
+</div>
                
         </div>
     </div>
@@ -144,9 +188,7 @@
                 <img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt="">
 
             </div>
-        </div>
        
-    </div>
     <!-- Footer -->
     <div id="footer">
         <div id="contacts">
