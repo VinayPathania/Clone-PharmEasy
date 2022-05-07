@@ -27,6 +27,7 @@
 }
 #offer-head>h1>span{
     color:rgb(246, 116, 80);
+    font-size: 30px;
 }
 
 #offer-sec {
@@ -75,7 +76,7 @@
       margin-right:7.5rem;
       border: 2px solid #f7797a;
       border-top-left-radius: 8px;
-      font-size: 1.3rem;  
+      font-size: 1.2rem;  
       color: #fff;
   }
 
@@ -87,12 +88,12 @@
   }
   #offer-sec>div>h3{
       margin: 5px 5px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color:rgb(48, 48, 48);
   }
   #offer-sec>div>h2{
       margin: 5px 5px;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color:rgb(48, 48, 48);
   }
   #v-btn{
@@ -105,7 +106,7 @@
       background-color: #f76060;
       border-radius: 10px;
       cursor: pointer;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: bold;
   }
   #v-btn:hover{
@@ -128,7 +129,7 @@
       width: 23%;
   }
   #detail>div>img{
-      height: 150px;
+      height: 100px;
       margin-bottom: 20px;
   }
   #detail>div>h1{
