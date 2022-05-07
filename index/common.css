@@ -1,0 +1,72 @@
+.healthCare-container{
+    display: flex;
+    
+     width: 80%;
+    margin:auto;
+    margin-top: 50px;
+}
+
+#healthcare-box1{
+    
+    display: grid;
+     grid-template-columns: repeat(3,1fr); 
+    margin: auto;
+    margin-right: 10px;
+    width: 100%;
+     height: 130px; 
+     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+     border-radius: 5px;
+    border:1px solid rgba(128, 128, 128, 0.422);
+    
+
+}
+#healthcare-box1:hover{
+    box-shadow:teal 0px 0px 8px;
+
+   
+}
+#healthcare-box1{
+    border: 1 px solid red;
+}
+
+#healthcare-box1>p{
+    margin: auto;
+    margin-left: 55px;
+    font-size: 20px;
+   color: teal;
+}
+#anchor{
+    margin: auto;
+   
+}
+
+#healthcare-box1>img{
+    width:60% ;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#healthCare-grid{
+    display:grid;
+    gap:20px ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    cursor: pointer;
+    color: teal;
+    
+}
+#healthcare-box1>p>a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.681);
+    font-family: sans-serif;
+    font-size: 18px;
+}
+/* #navbar{
+  background-color: teal;
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  color: white;
+ padding-top: 20px;
+} */
