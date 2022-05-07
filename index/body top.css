@@ -1,10 +1,9 @@
-
-* {
+{
   font-family: 'Open Sans', sans-serif;
   font-family: 'Oswald', sans-serif;
 }
 
-/* ************************************************              */
+/* ****************              */
 .slider{
   display: flex;
   justify-content: center;
@@ -103,7 +102,7 @@ margin-top:20px;
  
 
 
-/* slide part css****************************** */
+/* slide part css************ */
 .row1LK{
   height: 15rem;
    width: 100%;
@@ -122,7 +121,7 @@ margin-top:20px;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 200px;
   gap: 20px;
-  margin: 1rem 0rem 0rem 2rem;
+  margin: 1rem 0rem 0rem 3.6rem;
 }
 .orderLK{
   height: 12rem;
@@ -139,7 +138,7 @@ margin-top:20px;
   margin: 0.5rem 0rem 0rem 0rem;
   padding: 6px 0px 0px 6px;
   border-top-left-radius: .4rem;  font-family: sans-serif;
-  font-size: 11px; color:#FFFF; font-weight: 600;
+  font-size: 14px; color:#FFFF; font-weight: 600;
   background-image: url(https://assets.pharmeasy.in/web-assets/dist/1602b4ce.svg);
 }
 .stripLK >span{
@@ -168,8 +167,12 @@ color: #FFFF;
 
 .goku{
   margin: 1.5rem 0rem 0rem 3.4rem; 
- color: #4F585E; font-size: 20px;
+ color: #4F585E; font-size: 16px;
 }
+
+/* .ramram{
+  font-size: 16px;
+} */
 
 .orderLK > img{
   height: 11.2rem;
@@ -261,6 +264,3 @@ margin: 2rem 0rem 0rem 3.5rem;
   body {
     background-color: olive;
   } */
-
-
- 

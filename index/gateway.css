@@ -136,3 +136,38 @@ body {
 .safe_text{
     font-size: 11px;
 }
+
+
+.ramram{
+  width: 50%;
+  float: left;
+
+}
+.hareram{
+  width: 50%;
+  float: right;
+}
+
+#charger{
+  width: 100%;
+  height: 100px;
+  background-color: #007960;
+  display: flex;
+  justify-content: space-around;
+}
+
+#charger>div{
+  margin-top: 20px;
+  width: 20%;
+  /* border: 1px solid red; */
+}
+
+.paylogo>img{
+  width: 60%;
+}
+
+.securepay{
+  width: 80%;
+  color: #ffffff;
+}
+
