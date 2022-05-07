@@ -94,7 +94,8 @@
 
 .box-line{
     display: flex;
-    /* justify-content: space-between; */
+    /* justify-content: space; */
+    align-items: center;
     height: 30px;
     margin: 10px 15px;
     color: rgb(70, 69, 69);
