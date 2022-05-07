@@ -1,9 +1,28 @@
 
 /* css part of Add to cart page is here */
-
+/* 
 #parent{
     width: 80%;
     /* border: 1px solid; */
+    /* margin: auto;
+    margin-top: 40px;
+    display: flex;
+} */
+
+/* .box{
+    width: 40%; */
+    /* border: 1px solid; */
+    /* margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    /* background-color: ; */
+/* }  */
+
+/* all items appending here */
+/* css part of Add to cart page is here */
+
+#parent{
+    width: 80%;
+    border: 0px solid;
     margin: auto;
     margin-top: 40px;
     display: flex;
@@ -11,13 +30,225 @@
 
 .box{
     width: 40%;
-    /* border: 1px solid; */
+    border: 0px solid;
     margin: auto;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* background-color: ; */
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    /* background-color:white ; */
+    
 }
 
 /* all items appending here */
+#addedItems{
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 0px 15px;
+}
+#addedItems>.childdiv{
+    /* div in which img and info will rest */
+    display: flex;
+    margin: auto;
+    /* border: 1px solid teal; */
+    background-color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imgdiv{
+    width: 10%;
+    /* height: auto; */
+    /* border: 1px solid; */
+    margin: 10px 0px;
+
+}
+
+.imgdiv>img{
+    max-height: 60px;
+    max-width: 60px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.infodiv{
+    width: 80%;
+    text-align: center;
+    margin:10px 0px;
+    padding-left: 15px;
+
+}
+
+.dltbtn{
+    border: 0px;
+    background-color: #10847e;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+/* >>>>>>>>>>>>>>cart calculation css>>>>>>>>>>>>> */
+/* #appdownload{
+    display: flex;
+} */
+
+.sonOfappdownload{
+    height:400px;
+    width: 49%;
+    border: 0px solid red;
+    position: relative;
+    
+        
+    /* //it make distaance b/w footer and content ? */
+}
+
+
+.btnOfLk{
+    height:45px;
+    width:500px;font-size: 20px;
+    font-weight: 700;display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex; background-color: white;
+    border-radius: 6px;border-color: #10847e;
+     padding-bottom: 7px;
+}
+.sonOfappdownload>a{
+    text-decoration: none;
+    
+}
+/* .btnOfLk:nth-child(1){
+    padding-bottom: 5px;
+    }
+    
+.btnOfLk>span:nth-child(2){
+padding-bottom: -5px;
+} */
+
+
+.buttn2{
+    height:45px;
+    width:500px;
+    border-radius: 6px;
+    background-color: #10847e;
+    color: #ffff;border: 0; font-size: 20px;
+}
+.buttn2:hover{
+    background-color: #133a38;
+    transform: scale(0.99);
+    transition: all 0.15s ease;
+
+}
+.buttn3lk{
+    height:45px;
+    width:500px;
+    border-style: dashed;
+    color: #10847e; border-width: .7px;
+    border-color: #10847e;
+    padding-bottom: 5px;background-color:#f2fff8;
+    border-radius: 6px;font-size: 20px;
+}
+.buttn3lk>img{
+    height: 25px;
+    width: auto;
+    padding-top: 5px;
+}
+
+.calculationLK{
+    margin: .5rem 0rem 0rem 0rem;
+    color: #4f585e;font-size: 20px;
+}
+.calculationLK >span{
+    /* float: right; */
+    margin-left:22%;
+    font-weight: 700;
+    font-size: 18px;
+}
+.calculationLK>del{
+  margin-left: 100px;font-size: 14px;
+}
+/* #discountSalectionsgv{
+    height:45px;
+    width:500px;
+    margin-top: 15px; font-size: 20px;
+    border-style: dashed;
+    color: #10847e; border-width: .7px;
+    border-color: #10847e;
+    padding-bottom: 5px;background-color:#f2fff8;
+    border-radius: 6px;
+    padding: 0px 20px 0px 5px;
+}
+#discountSalectionsgv>option{
+    font-size: 14px;
+} */
+#getPlusPrem{
+    height:235px;
+    width:505px;
+    border-radius: 6px;
+    /* margin-top: 20px; */
+}
+.safetyzone{
+    height:60px; align-items: center;
+    width:72%;background-color: #e9f9ff;
+    border: 0px solid red;display: flex;
+    border-radius: 6px;
+}
+.safetyzone >div{
+    height:100%;
+    width:30px;margin: 20px 0px 0px 10px;
+    border: 0px solid rgb(6, 136, 69);
+}
+.safetyzone >div+div{
+    height:100%;margin-top: 20px;
+    width:300px;font-size: 14px;
+    border: 0px solid rgb(121, 35, 242);
+}
+.safetyzone >img{
+    height:25px;
+    width:30px; margin-top: 20px;
+}
+.qtyhand{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    
+}
+#discount{
+    height:45px;
+    width:400px;
+    margin-top: 20px; padding-left: 10px;
+    border-color: #10847e;
+}
+#discount+input{
+    height:45px; border-radius: 6px; font-size: 18px;font-weight: 700;
+    width:100px; border-color: #10847e;
+    background-color:#f2fff8;
+
+}
+#discount+input:hover{
+    background-color: #0f5450;
+    transform: scale(0.99);
+
+}
+#finalamt{
+    margin-left:17%;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#disoffer{
+    text-decoration: line-through;
+    color: gray;
+    margin-left:30%;
+    font-weight: 700;
+   
+}
+.disc{
+    color: gray;
+   
+}
+#count{
+    font-size: 30px;
+}
 #addedItems{
     width: 100%;
     /* border: 1px solid red; */

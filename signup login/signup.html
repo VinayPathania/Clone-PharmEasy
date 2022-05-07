@@ -63,7 +63,7 @@
         </div>
     </div>
     <!-- Signup start from here -->
-    <div id="main">
+    <!-- <div id="main">
         <form id="loginform">
             <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""/>
             <h3>Sign-up</h3>
@@ -74,41 +74,54 @@
 
             
         </form>
+    </div> -->
+
+    <div id="mainnn">
+        <form id="loginform" class="formm">
+            <img class="imgg" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+            <h3 id="signup">Sign-up</h3>
+            <input id="email" class="inputt" type="text" placeholder="Enter email">
+            <input id="pswrd" class="inputt" type="password" placeholder="Enter Password">
+            <p id="terms">By signing up,I accept the Terms of service and acknowledge the Privacy Policy.</p>
+            <input class="inputt" type="submit" value="Sign-up" id="sub">
+
+            
+        </form>
     </div>
    
 </body>
 </html>
 <script>
-     document.querySelector("#loginform").addEventListener("submit",myFunction)
+    document.querySelector("#loginform").addEventListener("submit",myFunction)
 
-     var logindata=JSON.parse(localStorage.getItem("logindata"))||[]
+    var logindata=JSON.parse(localStorage.getItem("logindata"))||[]
 
-     function myFunction(){
-       event.preventDefault();
-       var data={
-            peopleEmail:loginform.email.value,
-            peoplePswrd:loginform.pswrd.value,
-        }
-        logindata.push(data)
-        localStorage.setItem("logindata",JSON.stringify(logindata))
-        // alert("Account created successfully!")
-        //  var pswrdd=false
-        logindata.forEach(function(ele){
-            if(ele.peopleEmail=="" && ele.peoplePswrd=="")
-            {
-                
-                window.location.href="signup.html"
-              }
-            else{
-            
-                window.location.href="login.html"
-                //   alert("Account created successfully!")
-            }
+    function myFunction(){
+      event.preventDefault();
+      var data={
+           peopleEmail:loginform.email.value,
+           peoplePswrd:loginform.pswrd.value,
+       }
+       logindata.push(data)
+       localStorage.setItem("logindata",JSON.stringify(logindata))
+       // alert("Account created successfully!")
+       //  var pswrdd=false
+       logindata.forEach(function(ele){
+           if(ele.peopleEmail=="" && ele.peoplePswrd=="")
+           {
+               
+               window.location.href="signup.html"
+             }
+           else{
+           
+               window.location.href="login.html"
+               //   alert("Account created successfully!")
+           }
 
-        })
+       })
+      
        
-        
 
-     }
-     
+    }
+    
 </script>

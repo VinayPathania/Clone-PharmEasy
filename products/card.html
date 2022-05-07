@@ -7,9 +7,13 @@
     <title>Card</title>
     
     <!-- Navbar CSS linked to cart page -->
+    <!-- first link for icons not for fonts -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../Navbar/navbar.css">
     <link rel="stylesheet" href="../Footer/footer.css">
+   
     <link rel="stylesheet" href="../products/cart.css">
+
     <style>
         /* #container{
         display: grid;
@@ -116,7 +120,7 @@
     <div id="parent">
         <div class="box">
           <!-- Added Cart Items -->
-                <h1 class=""> <span  id="count"></span> Item in Cart</h1>
+                <h1 style="font-size:30px;" class=""> <span id="count"></span> Item in Cart</h1>
                 <div id="addedItems">
                     <!-- items will be append here -->
                     
@@ -124,17 +128,51 @@
                 </div>
         </div>
 
-        <div class="box">
-                <!-- coupon, delivery address and order summary -->
-                <h2>Amount to be paid: ₹ <span  id="price"></span></h2>
-                <h2 class="disc">Discount : ₹ <span id="disoffer"></span> </h2>
-                <h2>Final Amount After Discount : ₹<Span id="finalamt"></Span> </h2>
-            
-               <form id="form">
-                   <input type="text" id="discount" placeholder="Discount">
-                   <input type="submit">
-               </form>
-        </div>
+            <!-- <div id="sonOfappdownload"> -->
+
+
+        <div class="sonOfappdownload">
+
+                      <!-- coupon, delivery address and order summary -->
+
+                      <a href="../discountPage.png"> <button class="btnOfLk" type="submit">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/90a09c2f.svg" alt="">&nbsp;&nbsp;
+                   <span></span> Apply Coupon/View Offers</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">
+                                navigate_next
+                                </span>
+                        
+             </button></a>
+                <br>
+                <button class="buttn2">Proceed To Buy</button>
+                <br><br>
+                <button class="buttn3lk"> <img src="https://cdn.pharmeasy.in/cms/delivery_image.png" alt=""> &nbsp; Free Delivery with Cart value above ₹500</button>
+            <br>  <br>  
+                   <h3 class="calculationLK">Order Summary</h3>
+                  
+                   <p class="calculationLK" >cart value : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span  id="price">₹</span></p>
+                   <p class="calculationLK"class="disc">Discount : <span id="disoffer">₹</span></p>
+                   <h4 class="calculationLK">Amount to be Paid: <span  id="finalamt">₹</span></h4>
+                   <!-- form  for discount selection here -->
+                   <form id="form">
+                    <input type="text" id="discount" placeholder="Apply The Exciting Discount Here!">
+                    <input  type="submit">
+                </form>
+                
+                    <br> <br>
+                    <!-- broken image here -->
+                   <img id="getPlusPrem" src="../sspremium.png" alt="">
+                 <br><br>
+                   <div class="safetyzone">
+                      <div id="sfezonImg"> <img src="https://assets.pharmeasy.in/web-assets/dist/0c22e009.svg?dim=0x32&dpr=1.100000023841858&q=100" alt=""></div>
+                       <div>Products will be safely packed & Sanitized. Pay online for contactless delivery</div>    
+                    </div>
+
+                </div>
+
+
+
+                </div>
+             </div>
     </div>
    
 
@@ -221,11 +259,11 @@
             <div>
                 <!-- Fourth Column -->
                 <h3>FOLLOW US</h3>
-                <div class="images">
+                <div class="social-images">
                     <img class="socialmediaimg" src="../Footer/Social Media icons/instagram.png" alt="">
-                    <img class="socialmediaimg" src="../Footer/Social Media icons/facebook.png" alt="">
-                    <img class="socialmediaimg" src="../Footer/Social Media icons/youtube.png" alt="">
-                    <img class="socialmediaimg" src="../Footer/Social Media icons/twitter.png" alt="">
+                    <img class="socialmediaimg" src="../Footer/Social Media icons//facebook.png" alt="">
+                    <img class="socialmediaimg" src="../Footer/Social Media icons//youtube.png" alt="">
+                    <img class="socialmediaimg" src="../Footer/Social Media icons//twitter.png" alt="">
     
                 </div>
             </div>
@@ -250,6 +288,9 @@
             <span> &copy; 2022 PharmEasy. All Rights Reserved</span>
         </div>
     </div>
+
+   
+   
     
     
     
