@@ -15,7 +15,7 @@ document.querySelector(".sidebar").addEventListener("click", () => {
     
     var box= document.getElementById("namelk").innerText="Payment success! Your Order is delivered within few minutes";
          alert(box)
-        window.location.href="http://127.0.0.1:5500/Team-Spartans/index/index.html"
+        window.location.href="index.html"
         
         }
 
