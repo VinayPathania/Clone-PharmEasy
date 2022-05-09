@@ -88,7 +88,7 @@ function displayoffer(data){
         disPrice.innerText = "MRP"+" "+element.disPrice;
 
         var price = document.createElement("h2");
-        price.innerText = "$"+element.price;
+        price.innerText = "₹"+element.price;
 
         var offer = document.createElement("h2");
         offer.innerText = element.offer+" "+"OFF";
