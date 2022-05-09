@@ -15,6 +15,8 @@ we started to clone the website along with the functionalities, at start we just
 
 As the website still not fully functional so below steps will guide you through current functionalities:
 
+### NOTE - `index.html` file from `Index folder` will guide you through clone.
+
 1. From `homepage` you will be able to do `Login/Singup`, it will redirects you to singup page after the click.
 2. You have to provide email and password to create account, after that you have to login via same email and password that provided during singup page.
 3. If it match then yo redirect to `Homepage` where you can see `User` in place of login/singup else you will get user invalid pop-up
