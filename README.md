@@ -19,6 +19,8 @@ we started to clone the website along with the functionalities, at start we just
 
 As the website still not fully functional so below steps will guide you through current functionalities:
 
+<img src="https://cms-contents.pharmeasy.in/banner/85955054ec0-Surgicare_Dweb_1.jpg?dim=1440x0&dpr=1&q=100" alt="pharma" />
+
 ### NOTE - `index.html` file from `Index folder` will guide you through clone.
 
 1. From `homepage` you will be able to do `Login/Singup`, it will redirects you to singup page after the click.
