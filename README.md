@@ -1,9 +1,10 @@
 # Team-Spartans
 
 # PharmEasy Website Clone
-Delpoy Link: https://cute-jalebi-e15c39.netlify.app/
+Delpoy Link: <a href="https://cute-jalebi-e15c39.netlify.app/" >PharmaEasy</a>
 
-<img src="https://miro.medium.com/max/1200/1*hTCiJbp2WS8HmPucc0P64Q.png" alt="pharma" />
+
+<img src="https://user-images.githubusercontent.com/101393657/208403717-8e2a4904-a550-4671-a2d9-47c4f131b0cb.png" alt="pharma" />
 
 we started to clone the website along with the functionalities, at start we just addded some of the functionalities as follows:
 
