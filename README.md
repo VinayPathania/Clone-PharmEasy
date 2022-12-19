@@ -3,6 +3,8 @@
 # PharmEasy Website Clone
 Delpoy Link: https://cute-jalebi-e15c39.netlify.app/
 
+<img src="https://miro.medium.com/max/1200/1*hTCiJbp2WS8HmPucc0P64Q.png" alt="pharma" />
+
 we started to clone the website along with the functionalities, at start we just addded some of the functionalities as follows:
 
 * Login/Singup
